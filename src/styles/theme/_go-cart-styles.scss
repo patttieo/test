@@ -57,6 +57,10 @@ Go Cart styles
         font-size: 40.32px;
         line-height: 53px;
         text-align: center;
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        height: 140px;
     }
     .go-cart-drawer__subtotal { 
         span {
