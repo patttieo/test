@@ -1,0 +1,66 @@
+<div class="home-landing" style="background:url({{ section.settings.landing_image | img_url: 'master' }}) no-repeat; background-size:cover;    background-position: right;">
+    <div class="landing-content" >
+        <img class="mobile-image" src="{{ section.settings.mobile_landing_image | img_url: 'master' }}" alt="">
+      <div class="inner-content">
+            <h2 class="intro-text">{{ section.settings.intro_text_editor }}</h2>
+            <p class="description-text">{{ section.settings.intro_description }}</p>
+            <p class="promo-text">{{ section.settings.intro_promo }}</p>
+            <a class="btn intro-btn" href="{{ section.settings.landing_button_url }}">{{ section.settings.landing_button_text }}</a>
+        </div>
+    </div>  
+</div>
+{{ section.settings.intro_text }}
+
+{% schema %}
+  {
+    "name": "Home Landing",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "landing_image",
+            "label": "Landing image"
+        },
+        {
+            "type": "image_picker",
+            "id": "mobile_landing_image",
+            "label": "Moble landing image"
+        },
+        {
+            "type": "richtext",
+            "id": "intro_text",
+            "label": "Intro text"
+        },
+        {
+            "type": "richtext",
+            "id": "intro_text_editor",
+            "label": "Intro text"
+        },
+        {
+            "type": "textarea",
+            "id": "intro_description",
+            "label": "Intro description"
+        },
+        {
+            "type": "textarea",
+            "id": "intro_promo", 
+            "label": "Promo text"
+        },
+        { 
+            "type": "text",
+            "id": "landing_button_text",
+            "label": "Intro text"
+        }, 
+        {
+            "type": "url",
+            "id": "landing_button_url",
+            "label": "Banner button"
+        }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

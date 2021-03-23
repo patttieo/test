@@ -1,0 +1,96 @@
+/*================================
+==================================
+Go Cart styles
+==================================
+================================*/
+
+.go-cart__mini-cart.js-go-cart-mini-cart {
+    display:none;
+}
+.go-cart__drawer  {
+    width:50%;
+    max-width: unset;
+    right:-50%;
+
+    .go-cart-item__quantity-number{ 
+        background-color:#fff;
+        font-family:$univers;
+        font-size: 14px;
+        line-height: 31px;
+        letter-spacing: 0.777778px;
+        text-transform: uppercase;
+        color: #2D2D2D;
+    }
+    .go-cart-drawer__header {
+        position: relative;
+        justify-content: center;
+    }
+    .go-cart-drawer__close {
+        position: absolute;
+        right:40px;
+    }
+    .go-cart-item__single {
+        border-bottom: 2px solid #272727;
+    }
+    .go-cart-item__info {
+        a {
+            font-family:$ogg;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 32px;
+            text-decoration: none;
+            color: #2B2B2B;
+        }
+
+    }
+    .go-cart-item__quantity-label {
+        display:none;
+    }
+    .go-cart-item__quantity-button {
+        border:none;
+    }
+    .go-cart__empty { 
+        font-family:$ogg;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40.32px;
+        line-height: 53px;
+        text-align: center;
+    }
+    .go-cart-drawer__subtotal { 
+        span {
+            font-family:$univers;
+            font-size: 11px;
+            line-height: 20px;
+            letter-spacing: 0.458333px;
+            text-transform: uppercase;
+        }
+        .go-cart-drawer__subtotal-price {
+            font-family:$univers;
+            font-size: 14px;
+            line-height: 31px;
+            letter-spacing: 0.777778px;
+            text-transform: uppercase;
+        } 
+    }
+
+    &.is-open {
+        transform: translateX(-100%);
+    }
+}
+
+/*================================ 
+==================================
+MEDIA QUERIES   
+==================================
+================================*/
+
+@media (max-width:992px) {
+    .go-cart__drawer  {
+        background-color: #F9F8F5;
+        width:100%;
+        max-width: unset;
+        right: -100%;
+    }
+}

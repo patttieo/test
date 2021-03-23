@@ -1,0 +1,117 @@
+/*================================ 
+==================================
+Home page styles 
+==================================
+================================*/
+
+.template-index {
+    #shopify-section-footer {
+        display:none;
+    }
+}
+
+// Landing styles
+.home-landing {
+    width:100%;
+    height: 100vh;
+    .mobile-image {
+        display:none;
+    }
+    .landing-content {
+        height: 100vh; 
+        display: flex; 
+        align-items: center; 
+        padding-left:7.5%;
+    }
+    .intro-text {
+        font-family:$ogg;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 97px;
+        color:#fff;
+        line-height: 113px;
+        p {
+            margin:0;
+            padding:0;
+        }
+        em { 
+            font-family: 'Ogg-Italic'!important;
+        }
+    }
+    .description-text {
+        font-family:$univers;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        color:#fff;
+    }
+    .promo-text {
+        font-family:$univers;
+        font-size: 11px;
+        line-height: 20px;
+        color:#fff;
+        letter-spacing: 0.458333px;
+        text-transform: uppercase;
+    }
+    .intro-btn {
+        min-width: 260px;
+        background-color: #fff;
+        color:#000;
+        text-align: center;
+        padding:15px 0; 
+        display: inline-block;
+        font-family:$univers;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 1.16667px;
+        text-transform: uppercase;
+    }
+}
+
+/*================================ 
+==================================
+MEDIA QUERIES   
+==================================
+================================*/
+
+@media (max-width:992px) {   
+    // Landing styles
+    .home-landing {
+        background:transparent!important; 
+        .mobile-image {
+            display:block;
+            width:100%; 
+        }
+        .landing-content {
+            display:block;
+            align-items: center; 
+            justify-content: center;
+            padding-left:0;
+            text-align: center;
+        }
+        .inner-content {
+            padding:0 20px;
+        }
+        .intro-text {
+            font-family:$ogg;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 60px;
+            line-height:0;
+            margin:-25px 0 0;
+            p {
+                line-height: 68px;
+            }
+            text-align: center;
+            p {
+                margin:0;
+                padding:0;
+            }
+            em { 
+                font-family:$ogg-italic;
+            }
+        }
+    } 
+}
